@@ -80,6 +80,7 @@ textarea:focus {
 }
 
 .click {
+  cursor: pointer;
   transition: all 300ms ease;
 }
 
@@ -409,6 +410,14 @@ nav {
   }
 }
 
+.modal__exit {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 36px;
+  z-index: 100;
+}
 /* PROJECTS */
 
 .section__title {

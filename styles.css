@@ -87,11 +87,11 @@ section {
 }
 
 .link__hover-effect--black:after {
-  color: #000;
+  background-color: #000;
 }
 
 .link__hover-effect--white:after {
-  color: #fff;
+  background-color: #fff;
 }
 
 .link__hover-effect:hover:after {

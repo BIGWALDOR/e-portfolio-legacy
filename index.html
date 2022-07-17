@@ -11,6 +11,7 @@
     ></script>
     <script src="./email.js"></script>
     <script src="./toggleModal.js"></script>
+    <script src="./toggleDarkMode.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -55,7 +56,7 @@
               Contact
             </a>
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleDarkMode()">
             <a
               href=""
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -68,7 +69,7 @@
       <header class="header">
         <div class="header__content">
           <h1 class="title">Kia Ora</h1>
-          <h1 class="title title--secondary">I'm Walid!</h1>
+          <h1 class="title--secondary">I'm Walid!</h1>
           <p class="header__para">
             I'm a
             <span class="text--secondary">Fullstack Software Engineer </span

@@ -602,3 +602,45 @@ footer {
 .footer__copyright {
   color: #fff;
 }
+
+/* SHAPES */
+
+.shape {
+  position: fixed;
+}
+
+.shape--zero,
+.shape--one,
+.shape--two {
+  top: 15vh;
+}
+
+.shape--three,
+.shape--four,
+.shape--five {
+  top: 50vh;
+}
+
+.shape--six,
+.shape--seven,
+.shape--eight {
+  top: 80vh;
+}
+
+.shape--zero,
+.shape--three,
+.shape--six {
+  left: 5vw;
+}
+
+.shape--one,
+.shape--four,
+.shape--seven {
+  left: 50vw;
+}
+
+.shape--two,
+.shape--five,
+.shape--eight {
+  left: 80vw;
+}

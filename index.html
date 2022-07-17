@@ -12,6 +12,7 @@
     <script src="./email.js"></script>
     <script src="./toggleModal.js"></script>
     <script src="./toggleDarkMode.js"></script>
+    <script src="./moveBackground.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -26,7 +27,7 @@
   </head>
 
   <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img id="personal-logo" src="./assets/WB Logo.png" alt="" />
@@ -216,6 +217,15 @@
           </div>
         </div>
       </div>
+      <img src="./assets/semi circle.svg" class="shape shape--zero" />
+      <img src="./assets/circle.svg" class="shape shape--one" />
+      <img src="./assets/squiggly.svg" class="shape shape--two" />
+      <img src="./assets/circle.svg" class="shape shape--three" />
+      <img src="./assets/triangle.svg" class="shape shape--four" />
+      <img src="./assets/circle.svg" class="shape shape--five" />
+      <img src="./assets/squiggly.svg" class="shape shape--six" />
+      <img src="./assets/circle.svg" class="shape shape--seven" />
+      <img src="./assets/semi circle.svg" class="shape shape--eight" />
     </section>
 
     <section id="projects">

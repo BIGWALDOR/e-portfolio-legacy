@@ -22,5 +22,3 @@ function contact(event) {
       alert('Something went wrong. Please try again.')
     })
 }
-
-module.exports = contact

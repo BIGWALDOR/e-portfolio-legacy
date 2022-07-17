@@ -5,5 +5,3 @@ function toggleModal() {
     ? (document.body.classList += ' modal--open')
     : document.body.classList.remove('modal--open')
 }
-
-module.exports = toggleModal

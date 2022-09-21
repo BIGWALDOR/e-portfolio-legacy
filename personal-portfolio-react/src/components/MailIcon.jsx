@@ -1,6 +1,6 @@
 import { FaEnvelope } from 'react-icons/fa'
 
-import { toggleModal } from '../../toggleModal'
+import { toggleModal } from '../../../toggleModal'
 
 export const MailIcon = () => {
   return (

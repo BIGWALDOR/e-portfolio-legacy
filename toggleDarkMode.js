@@ -6,3 +6,5 @@ function toggleDarkMode() {
     ? (document.body.classList += ' dark-mode')
     : document.body.classList.remove('dark-mode')
 }
+
+export { toggleDarkMode }

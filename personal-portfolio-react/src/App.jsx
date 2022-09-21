@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar'
 import { ScrollIcon } from './components/ScrollIcon'
 import { MailIcon } from './components/MailIcon'
 import { Projects } from './components/Projects'
+import { Footer } from './components/Footer'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <section id="projects">
         <Projects />
       </section>
+      <Footer />
     </>
   )
 }

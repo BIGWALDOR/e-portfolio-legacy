@@ -2,7 +2,7 @@ import { FaTimes } from 'react-icons/fa'
 
 import { Contact } from './Contact'
 
-import { toggleModal } from '../../../toggleModal'
+import { toggleModal } from '../../helper/toggleModal'
 
 import awsLogo from '../assets/aws.png'
 import azureLogo from '../assets/azure.png'

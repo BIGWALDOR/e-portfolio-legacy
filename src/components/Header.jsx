@@ -1,6 +1,6 @@
 import { FaLinkedinIn, FaGithub, FaRegFilePdf } from 'react-icons/fa'
 
-import { toggleModal } from '../../../toggleModal'
+import { toggleModal } from '../../helper/toggleModal'
 
 export const Header = () => {
   return (

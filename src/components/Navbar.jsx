@@ -1,11 +1,19 @@
 import { VscColorMode } from 'react-icons/vsc'
 
-import { toggleDarkMode } from '../../../toggleDarkMode'
-import { toggleModal } from '../../../toggleModal'
+import { toggleModal } from '../../helper/toggleModal'
 
 import personalLogo from '../assets/WB_Logo-removebg.png'
 
 export const Navbar = () => {
+  let isDarkMode = false
+
+  function toggleDarkMode() {
+    e.preventDefault()
+    isDarkMode = !isDarkMode
+      ? (document.body.classList += ' dark-mode')
+      : document.body.classList.remove('dark-mode')
+  }
+
   return (
     <nav>
       <figure>

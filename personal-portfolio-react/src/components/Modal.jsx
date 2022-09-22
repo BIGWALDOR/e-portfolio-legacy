@@ -1,4 +1,6 @@
-import { FaTimes, FaSpinner } from 'react-icons/fa'
+import { FaTimes } from 'react-icons/fa'
+
+import { Contact } from './Contact'
 
 import { toggleModal } from '../../../toggleModal'
 
@@ -99,28 +101,7 @@ export const Modal = () => {
         <h4 className="modal__sub-title modal__sub-title--contact">
           I'm currently open to new opportunities.
         </h4>
-        <form id="contact__form" onsubmit="contact(event)">
-          <div className="form__item">
-            <label className="form__item--label">Name</label>
-            <input type="text" className="input" name="user_name" />
-          </div>
-          <div className="form__item">
-            <label className="form__item--label" f>
-              Email
-            </label>
-            <input type="email" className="input" name="user_email" />
-          </div>
-          <div className="form__item">
-            <label className="form__item--label">Message</label>
-            <textarea className="input" name="user_message"></textarea>
-          </div>
-          <button id="contact_submit" className="form__submit">
-            Send it my way
-          </button>
-        </form>
-        <div className="modal__overlay modal__overlay--loading">
-          <FaSpinner />
-        </div>
+        <Contact />
         <div className="modal__overlay modal__overlay--success">
           Thanks for the message! Looking forward to speaking with you soon.
         </div>

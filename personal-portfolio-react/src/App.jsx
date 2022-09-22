@@ -9,7 +9,7 @@ import { Modal } from './components/Modal'
 const App = () => {
   return (
     <>
-      <section id="landing-page" onmousemove="moveBackground(event)">
+      <section id="landing-page" onMouseMove="moveBackground(event)">
         <Navbar />
         <Header />
         <ScrollIcon />

@@ -5,7 +5,7 @@ import { toggleModal } from '../../../toggleModal'
 export const MailIcon = () => {
   return (
     <a href="#">
-      <button class="mail__btn click" onclick={toggleModal}>
+      <button className="mail__btn click" onClick={toggleModal}>
         <FaEnvelope />
       </button>
     </a>

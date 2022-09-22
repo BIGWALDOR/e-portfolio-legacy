@@ -4,6 +4,7 @@ import { ScrollIcon } from './components/ScrollIcon'
 import { MailIcon } from './components/MailIcon'
 import { Projects } from './components/Projects'
 import { Footer } from './components/Footer'
+import { Modal } from './components/Modal'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Header />
         <ScrollIcon />
         <MailIcon />
+        <Modal />
       </section>
       <section id="projects">
         <Projects />

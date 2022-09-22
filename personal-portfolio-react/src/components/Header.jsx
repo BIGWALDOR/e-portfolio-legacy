@@ -14,7 +14,7 @@ export const Header = () => {
           with a strong passion for building web applications with great user
           experiences.
           <br />
-          Here's a bit a more
+          Here's a bit a more&nbsp;
           <span className="text--secondary click" onClick={toggleModal}>
             about me
           </span>

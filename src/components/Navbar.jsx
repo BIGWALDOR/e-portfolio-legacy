@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+
 import { VscColorMode } from 'react-icons/vsc'
 
 import { toggleModal } from '../../helper/toggleModal'
@@ -5,13 +7,24 @@ import { toggleModal } from '../../helper/toggleModal'
 import personalLogo from '../assets/WB_Logo-removebg.png'
 
 export const Navbar = () => {
-  let isDarkMode = false
+  const [isDarkMode, setIsDarkMode] = useState(false)
 
-  function toggleDarkMode() {
-    e.preventDefault()
-    isDarkMode = !isDarkMode
-      ? (document.body.classList += ' dark-mode')
-      : document.body.classList.remove('dark-mode')
+  useEffect(() => {
+    const isDarkMode = localStorage.getItem('isDarkMode')
+    if (isDarkMode === 'true') {
+      document.body.classList.add('dark-mode')
+      setIsDarkMode(true)
+    }
+
+    if (isDarkMode === 'false') {
+      document.body.classList.remove('dark-mode')
+      setIsDarkMode(false)
+    }
+  }, [])
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode)
+    localStorage.setItem('isDarkMode', !isDarkMode)
   }
 
   return (

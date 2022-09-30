@@ -13,3 +13,5 @@ function moveBackground(event) {
     }px)`
   }
 }
+
+export { moveBackground }

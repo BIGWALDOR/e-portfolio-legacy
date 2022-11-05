@@ -1,4 +1,6 @@
-export const Footer = () => {
+import React, { ReactElement } from 'react';
+
+export const Footer = (): ReactElement => {
   return (
     <footer>
       <div className="container">
@@ -39,5 +41,5 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};

@@ -1,34 +1,34 @@
-import { useRef } from 'react'
-import emailjs from '@emailjs/browser'
-import { FaSpinner } from 'react-icons/fa'
+import React, { FormEvent, ReactElement, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { FaSpinner } from 'react-icons/fa';
 
-export const Contact = () => {
-  const form = useRef()
+export const Contact = (): ReactElement => {
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
-    e.preventDefault()
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
 
-    const loading = document.querySelector('.modal__overlay--loading')
-    const success = document.querySelector('.modal__overlay--success')
+    const loading: any = document.querySelector('.modal__overlay--loading');
+    const success: any = document.querySelector('.modal__overlay--success');
 
-    loading.classList += ' modal__overlay--visible'
+    loading.classList += ' modal__overlay--visible';
 
     emailjs
       .sendForm(
         'service_mu3qwmi',
         'template_rb794vc',
-        e.target,
+        e.target as HTMLFormElement,
         'K0T6cV4xLRt23lv2M'
       )
       .then(() => {
-        loading.classList.remove('modal__overlay--visible')
-        success.classList += ' modal__overlay--visible'
+        loading.classList.remove('modal__overlay--visible');
+        success.classList += ' modal__overlay--visible';
       })
       .catch(() => {
-        loading.classList.remove('modal__overlay--visible')
-        alert('Something went wrong. Please try again.')
-      })
-  }
+        loading.classList.remove('modal__overlay--visible');
+        alert('Something went wrong. Please try again.');
+      });
+  };
 
   return (
     <>
@@ -53,5 +53,5 @@ export const Contact = () => {
         <FaSpinner className="fa-spinner" />
       </div>
     </>
-  )
-}
+  );
+};

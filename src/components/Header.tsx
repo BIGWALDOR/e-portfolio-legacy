@@ -1,8 +1,9 @@
-import { FaLinkedinIn, FaGithub, FaRegFilePdf } from 'react-icons/fa'
+import React, { ReactElement } from 'react';
+import { FaLinkedinIn, FaGithub, FaRegFilePdf } from 'react-icons/fa';
 
-import { toggleModal } from '../../helper/toggleModal'
+import { toggleModal } from '../../helper/toggleModal';
 
-export const Header = () => {
+export const Header = (): ReactElement => {
   return (
     <header className="header">
       <div className="header__content">
@@ -45,5 +46,5 @@ export const Header = () => {
         </a>
       </div>
     </header>
-  )
-}
+  );
+};

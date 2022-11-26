@@ -1,19 +1,20 @@
-import { Header } from './components/Header'
-import { Navbar } from './components/Navbar'
-import { ScrollIcon } from './components/ScrollIcon'
-import { MailIcon } from './components/MailIcon'
-import { Projects } from './components/Projects'
-import { Footer } from './components/Footer'
-import { Modal } from './components/Modal'
+import * as React from 'react';
+import { Header } from './components/Header';
+import { Navbar } from './components/Navbar';
+import { ScrollIcon } from './components/ScrollIcon';
+import { MailIcon } from './components/MailIcon';
+import { Projects } from './components/Projects';
+import { Footer } from './components/Footer';
+import { Modal } from './components/Modal';
 
-import { moveBackground } from '../helper/moveBackground'
+import { moveBackground } from '../helper/moveBackground';
 
-import semiCircle from './assets/semi circle.svg'
-import circle from './assets/circle.svg'
-import squiggly from './assets/squiggly.svg'
-import triangle from './assets/triangle.svg'
+import semiCircle from './assets/semi circle.svg';
+import circle from './assets/circle.svg';
+import squiggly from './assets/squiggly.svg';
+import triangle from './assets/triangle.svg';
 
-const App = () => {
+export const App = () => {
   return (
     <>
       <section id="landing-page" onMouseMove={moveBackground}>
@@ -37,7 +38,5 @@ const App = () => {
       </section>
       <Footer />
     </>
-  )
-}
-
-export default App
+  );
+};

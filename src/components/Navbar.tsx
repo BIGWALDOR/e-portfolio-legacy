@@ -1,31 +1,36 @@
-import { useState, useEffect } from 'react'
+import React, { ReactElement } from 'react';
+import { useState, useEffect } from 'react';
 
-import { VscColorMode } from 'react-icons/vsc'
+import { VscColorMode } from 'react-icons/vsc';
 
-import { toggleModal } from '../../helper/toggleModal'
+import { toggleModal } from '../../helper/toggleModal';
 
-import personalLogo from '../assets/WB_Logo-removebg.png'
+import personalLogo from '../assets/WB_Logo-removebg.png';
 
-export const Navbar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+export const Navbar = (): ReactElement => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const isDarkMode = localStorage.getItem('isDarkMode')
+    const isDarkMode: boolean | string | null =
+      localStorage.getItem('isDarkMode');
     if (isDarkMode === 'true') {
-      document.body.classList.add('dark-mode')
-      setIsDarkMode(true)
+      document.body.classList.add('dark-mode');
+      setIsDarkMode(true);
     }
 
     if (isDarkMode === 'false') {
-      document.body.classList.remove('dark-mode')
-      setIsDarkMode(false)
+      document.body.classList.remove('dark-mode');
+      setIsDarkMode(false);
     }
-  }, [])
+  }, []);
 
   const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode)
-    localStorage.setItem('isDarkMode', !isDarkMode)
-  }
+    setIsDarkMode(!isDarkMode);
+    localStorage.setItem(
+      'isDarkMode',
+      Boolean.prototype.toString.call(!isDarkMode)
+    );
+  };
 
   return (
     <nav>
@@ -70,5 +75,5 @@ export const Navbar = () => {
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};

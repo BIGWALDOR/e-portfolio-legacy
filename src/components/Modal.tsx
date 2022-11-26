@@ -1,14 +1,15 @@
-import { FaTimes } from 'react-icons/fa'
+import React, { ReactElement } from 'react';
+import { FaTimes } from 'react-icons/fa';
 
-import { Contact } from './Contact'
+import { Contact } from './Contact';
 
-import { toggleModal } from '../../helper/toggleModal'
+import { toggleModal } from '../../helper/toggleModal';
 
-import awsLogo from '../assets/aws.png'
-import azureLogo from '../assets/azure.png'
-import nodeJSLogo from '../assets/nodejs.png'
+import awsLogo from '../assets/aws.png';
+import azureLogo from '../assets/azure.png';
+import nodeJSLogo from '../assets/nodejs.png';
 
-export const Modal = () => {
+export const Modal = (): ReactElement => {
   return (
     <div className="modal">
       <div className="modal__half modal__about">
@@ -107,5 +108,5 @@ export const Modal = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

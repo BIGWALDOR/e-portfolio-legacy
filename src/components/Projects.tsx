@@ -1,9 +1,10 @@
-import { FaGithub, FaLink } from 'react-icons/fa'
+import React, { ReactElement } from 'react';
+import { FaGithub, FaLink } from 'react-icons/fa';
 
-import projectImgOne from '../assets/real-estate-webapp.png'
-import projectImgTwo from '../assets/project-management-webapp.png'
+import projectImgOne from '../assets/real-estate-webapp.png';
+import projectImgTwo from '../assets/project-management-webapp.png';
 
-export const Projects = () => {
+export const Projects = (): ReactElement => {
   return (
     <div className="container">
       <div className="row">
@@ -86,5 +87,5 @@ export const Projects = () => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
